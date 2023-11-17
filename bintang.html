@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+        --container-width: 90%;
+    }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    section.page {
+        width: 100%;
+        min-height: 140vh;
+        /* margin-bottom: 10px; */
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.page.one {
+        background-image: url(starbg.png);
+    }
+
+    section.page.one > article {
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: left;
+        color: white;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    section.page.one > article.img {
+        float: left;
+        margin: 0px 10px 0px;
+    }
+
+    section.page.one > article > div.meow {
+        margin-top: 10px;
+    }
+
+    section.page.one > article > div.meowmeow {
+        margin-top: 10px;
+    }
+
+    section.page.one > article > div.woof {
+        margin-top: 10px;
+    }
+
+    section.page.one > article > div.woofwoof {
+        margin-top: 10px;
+    }
+
+    section.page.one > article > div.meowwoof {
+        margin-top: 10px;
+    }
+
+    section.page.one > article > div.kimdokja {
+        margin-top: 10px;
+    }
+
+    section.page.one > article > div.galeri {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .carousel {
+        height: 200px;
+        /* overflow: hidden; */
+        position: relative;
+        /* background-color: gray; */
+    }
+
+    .carousel-slide {
+        height: 200px;
+        display: none;
+        position: absolute;
+        animation: slide 3s ease infinite;
+    }
+
+    .carousel .carousel-slide:nth-child(1){
+        background: salmon;
+    }
+
+    .carousel .carousel-slide:nth-child(2){
+        background: greenyellow;
+    }
+
+    .carousel .carousel-slide:nth-child(3){
+        background: orangered;
+    }
+
+    @keyframes slide {
+        0%, 100% { opacity: 0; }
+        10%, 90% { opacity: 1; }
+    }
+
+    </style>
+</head>
+<body>
+    <section class=" page one">
+        <article class="article">
+            <header>
+                <h2>The Stars</h2>
+                <!-- <p>3 January 2023, written by <span style="font-style: italic;">Anonymous</span></p> -->
+            </header>
+        </article>
+        <article>
+            <div class="meow">
+                <h1>What are Stars?</h1>
+                <p>Stars are gigantic, glowing balls of gas that twinkle in the night sky. They're very, very far away from us, much farther than you can imagine. Some stars are much bigger and brighter than others, and they come in different colors.</p>
+            </div>
+
+            <div class="meowmeow">
+                <h1>The Sun - Our Special Star:</h1>
+                <p>Sun is a super-duper big and special star. It's much closer to us than any other star, and it's the reason we have daylight. We can see the Sun during the day, and it gives us warmth and light. The Sun is like a giant, fiery ball in the sky.</p> 
+            </div>
+            
+            <div class="woof">
+                <h1>Why Does the Sun Shine?</h1>
+                <p>The Sun shines because of a special process called nuclear fusion that happens inside it. It's like a big, hot oven where hydrogen (a type of gas) turns into helium, and this process releases a lot of energy. This energy is what makes the Sun glow and gives us light and heat.</p>
+            </div>
+
+            <div class="woofwoof">
+                <h1>Day and Night:</h1>
+                <p>During the day, the Sun is up in the sky, and its light makes everything bright. But when it's nighttime, the Sun is on the other side of the Earth, so we can't see it. That's when we see other stars in the sky.</p>
+            </div>
+
+            <div class="meowwoof">
+                <h1>Twinkling Stars:</h1>
+                <p>Stars twinkle because their light has to travel through Earth's atmosphere to reach us. The atmosphere is like a big blanket of air around the Earth. Sometimes it makes the starlight wobble a little, and that's why stars seem to twinkle.</p>
+            </div>
+
+            <div class="kimdokja">
+                <h1>Constellations:</h1>
+                <p>People have grouped stars into shapes called constellations. It's like connecting the dots in the sky to make pictures. You might have heard of some, like the Big Dipper or Orion. Remember, even though stars look tiny, they're actually enormous and far, far away. And our Sun is the star that's closest to us, making life possible on Earth!</p>
+            </div>
+
+            <div class="galeri">
+                <h1>Gallery::</h1>
+            </div>
+        </article>
+        <article class="img">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="anotherstar.png" alt="Stars" height="200px">
+                </div>
+                <div class="carousel-slide">
+                    <img src="morestarr.png" alt="Star" height="200px">
+                </div>
+                <div class="carousel-slide">
+                    <img src="stars.jpeg" alt="Guizhong" height="200px">
+                </div>
+        </article>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const slides = document.querySelectorAll(".carousel-slide");
+                let currentSlideIndex = 0;
+    
+                function showSlide(index) {
+                    slides[currentSlideIndex].style.display = "none";
+                    currentSlideIndex = (index + slides.length) % slides.length;
+                    slides[currentSlideIndex].style.display = "block";
+                }
+    
+                function nextSlide() {
+                    showSlide(currentSlideIndex + 1);
+                }
+    
+                showSlide(currentSlideIndex);
+    
+                setInterval(nextSlide, 3000);
+            });
+        </script>
+    </section>
+</body>
+</html>
