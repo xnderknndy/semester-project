@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playpen+Sans&display=swap" rel="stylesheet">
+    <style>
+    :root {
+        --container-width: 90%;
+    }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Playpen Sans', cursive;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    section.page {
+        width: 100%;
+        min-height: 100vh;
+        /* margin-bottom: 10px; */
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.page.one {
+        background-image: url(hmm.png);
+        background-size: cover;
+
+    }
+
+    section.page.one > article.article > header h2 {
+        color: white;
+        text-shadow: 5px 5px 10px black(248, 246, 246, 0.2);
+        font-family: 'Great Vibes', cursive;
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+    section.page.one > article.article > header {
+        color: white;
+        text-shadow: 5px 5px 10px black(248, 246, 246, 0.2);
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    section.page.one > article {
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: left;
+        color: white;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center; 
+    }
+
+    section.page.one > article div.box {
+        background-color: #4a4dff;
+        width: 250px; 
+        height: 400px; 
+        border: 2px solid white;
+        border-radius: 50px; 
+        margin: 10px;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.box.one {
+        height: 170px;
+        font-size: 17px;
+        text-align: left;
+    }
+
+    div.box.two {
+        height: 500px;
+        font-size: 17px;
+        text-align: left;
+    }
+
+    .box.two img {
+        max-width: 100%; 
+        max-height: 100%; 
+    }
+
+    div.box.three {
+        height: 380px;
+        font-size: 17px;
+        text-align: left;
+    }
+
+    .box.three img {
+        max-width: 100%; 
+        max-height: 100%; 
+    }
+
+    div.box.four {
+        height: 450px;
+        font-size: 17px;
+        text-align: left;
+    }
+
+    section.page.two {
+        background-image: url(lastpagebg.png);
+    }
+
+    section.page.two > article div.box {
+        background-color: #9f82ff;
+        width: 250px; 
+        height: 350px; 
+        border: 2px solid white;
+        border-radius: 50px; 
+        margin: 10px;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    </style>
+</head>
+<body>
+    <section class=" page one">
+        <article class="article">
+            <header>
+                <h2>The Solar System</h2>
+                <h1>Apa itu tata surya?</h1>
+                <p>Tata surya adalah sistem planet, bulan, asteroid, komet, dan benda-benda langit lainnya yang terikat oleh gravitasi Matahari, sebuah bintang besar yang berada di pusatnya. Sistem tata surya kita terdiri dari Matahari dan semua benda langit yang bergerak mengelilinginya</p> 
+            </header>
+        </article>
+        <article>
+            <div class="container">
+                <div class="box one">
+                    <h1>1. Merkurius</h1>
+                    <p>Merkurius adalah planet berwarna coklat kemerahan yang paling dekat dengan Matahari, dan bisa jadi sangat panas di siang hari dan sangat dingin di malam hari.</p>
+                    <img src="merkurius.jpeg" alt="Merkurius" height="150px">
+                </div>
+
+                <div class="box two">
+                    <h1>2. Venus</h1>
+                    <p>Venus dijuluki "Bulan Bumi" karena ukurannya hampir sama dengan Bumi. Tapi, sayangnya, Venus sangat panas dan memiliki awan tebal yang membuatnya sulit untuk melihat permukaannya..</p>
+                    <img src="venus.jpeg" alt="Venus" height="140px">
+                </div>
+    
+                <div class="box three">
+                    <h1>3. Bumi</h1>
+                    <p>Ya, ini rumah kita! Bumi adalah satu-satunya planet yang kita tahu memiliki kehidupan. Kita bisa hidup di sini!</p> 
+                    <img src="earth.jpeg" alt="Bumi" height="140px">
+                </div>
+                
+                <div class="box four">
+                    <h1>4. Maret</h1>
+                    <p>Mars disebut sebagai "Planet Merah" karena warnanya. Beberapa peselancar robot dari Bumi sedang mencari tanda-tanda kehidupan di sana!</p>
+                    <img src="mars.jpeg" alt="Mars" height="150px">
+                </div>
+            </div>
+    </section>
+    <section class="page two">
+        <article>
+            <div class="container">
+                <div class="box five">
+                    <h1>5. Jupiter</h1>
+                    <p>Jupiter adalah planet terbesar di tata surya kita. Jupiter punya badai besar yang disebut "Bintang Merah Besar."</p> 
+                    <img src="theactualjupiter.jpeg" alt="Jupiter" height="150px">
+                </div>
+
+                <div class="box six">
+                    <h1>6. Saturnus</h1>
+                    <p>Saturnus punya cincin! Mereka terlihat seperti lingkaran besar dan sangat cantik.</p>
+                    <img src="jupiterbettervers.jpeg" alt="Saturn" height="150px">
+                </div>
+    
+                <div class="box seven">
+                    <h1>7. Uranus</h1>
+                    <p>Uranus berputar terbalik! Itu artinya, seperti kita berdiri di kepala kita kalau di sana.</p>
+                    <img src="uranus.jpeg" alt="uranus" height="150px">
+                </div>
+                
+                <div class="box eight">
+                    <h1>8. Neptunus</h1>
+                    <p>Neptunus punya badai besar dan cepat yang disebut "Badai Besar Gelap."</p>
+                    <img src="demirajaneptunusBendamacamapaini.jpeg" alt="Neptunus" height="150px">
+                </div>
+            </div>
+    </section>
+</body>
+</html>
