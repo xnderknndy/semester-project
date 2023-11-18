@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playpen+Sans&display=swap" rel="stylesheet">
     <style>
         :root {
         --container-width: 90%;
@@ -19,7 +19,7 @@
     }
 
     body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Playpen Sans', cursive;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -39,9 +39,9 @@
     }
 
     section.page.one > article.article > header {
-        color:cadetblue;
-        text-shadow: 5px 5px 10px rgba(248, 246, 246, 0.2);
-        font-family: 'Rubik Mono One', monospace;
+        color: white;
+        text-shadow: 5px 5px 10px black(248, 246, 246, 0.2);
+        font-family: 'Great Vibes', cursive;        
         font-size: 35px;
     }
 
@@ -53,38 +53,43 @@
         text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     }
 
-    section.page.one > article.img {
-        float: left;
-        margin: 0px 10px 0px;
+    .container {
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center; 
     }
 
-    section.page.one > article > div.meow {
-        margin-top: 10px;
+    .box {
+        background-color: #4a4dff;
+        width: 350px; 
+        height: 350px; 
+        border: 2px solid white;
+        border-radius: 50px; 
+        margin: 10px;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    section.page.one > article > div.meowmeow {
-        margin-top: 10px;
+    div.box.one {
+        height: 300px;
+        font-size: 17px;
+        text-align: left;
     }
 
-    section.page.one > article > div.woof {
-        margin-top: 10px;
+    div.box.two {
+        height: 380px;
+        font-size: 17px;
+        text-align: left;
     }
 
-    section.page.one > article > div.woofwoof {
-        margin-top: 10px;
-    }
-
-    section.page.one > article > div.meowwoof {
-        margin-top: 10px;
-    }
-
-    section.page.one > article > div.kimdokja {
-        margin-top: 10px;
-    }
-
-    section.page.one > article > div.galeri {
-        margin-top: 10px;
-        margin-bottom: 10px;
+    div.box.three {
+        height: 350px;
+        font-size: 17px;
+        text-align: left;
     }
 
     .carousel {
@@ -129,34 +134,21 @@
             </header>
         </article>
         <article>
-            <div class="meow">
-                <h1>What are Stars?</h1>
-                <p>Stars are gigantic, glowing balls of gas that twinkle in the night sky. They're very, very far away from us, much farther than you can imagine. Some stars are much bigger and brighter than others, and they come in different colors.</p>
-            </div>
-
-            <div class="meowmeow">
-                <h1>The Sun - Our Special Star:</h1>
-                <p>Sun is a super-duper big and special star. It's much closer to us than any other star, and it's the reason we have daylight. We can see the Sun during the day, and it gives us warmth and light. The Sun is like a giant, fiery ball in the sky.</p> 
-            </div>
-            
-            <div class="woof">
-                <h1>Why Does the Sun Shine?</h1>
-                <p>The Sun shines because of a special process called nuclear fusion that happens inside it. It's like a big, hot oven where hydrogen (a type of gas) turns into helium, and this process releases a lot of energy. This energy is what makes the Sun glow and gives us light and heat.</p>
-            </div>
-
-            <div class="woofwoof">
-                <h1>Day and Night:</h1>
-                <p>During the day, the Sun is up in the sky, and its light makes everything bright. But when it's nighttime, the Sun is on the other side of the Earth, so we can't see it. That's when we see other stars in the sky.</p>
-            </div>
-
-            <div class="meowwoof">
-                <h1>Twinkling Stars:</h1>
-                <p>Stars twinkle because their light has to travel through Earth's atmosphere to reach us. The atmosphere is like a big blanket of air around the Earth. Sometimes it makes the starlight wobble a little, and that's why stars seem to twinkle.</p>
-            </div>
-
-            <div class="kimdokja">
-                <h1>Constellations:</h1>
-                <p>People have grouped stars into shapes called constellations. It's like connecting the dots in the sky to make pictures. You might have heard of some, like the Big Dipper or Orion. Remember, even though stars look tiny, they're actually enormous and far, far away. And our Sun is the star that's closest to us, making life possible on Earth!</p>
+            <div class="container">
+                <div class="box one">
+                    <h1>Apa itu Bintang?</h1>
+                    <p>Bintang adalah bola gas raksasa yang bersinar dan berkelap-kelip di langit malam. Mereka sangat, sangat jauh dari kita, lebih jauh dari yang dapat Anda bayangkan. Beberapa bintang jauh lebih besar dan terang dibandingkan yang lain, dan warnanya berbeda.</p>
+                </div>
+    
+                <div class="box two">
+                    <h1>Matahari - Bintang Istimewa Kita:</h1>
+                    <p>Matahari adalah bintang yang super-duper besar dan istimewa. Jaraknya lebih dekat dengan kita dibandingkan bintang mana pun, dan itulah alasan kita mendapat siang hari. Kita bisa melihat Matahari di siang hari, dan matahari memberi kita kehangatan dan cahaya. Matahari bagaikan bola api raksasa di langit.</p> 
+                </div>
+    
+                <div class="box three">
+                    <h1>Bintang Berkelap-kelip:</h1>
+                    <p>Bintang berkelap-kelip karena cahayanya harus melewati atmosfer bumi untuk mencapai kita. Atmosfer seperti selimut besar udara yang mengelilingi bumi. Terkadang hal ini membuat cahaya bintang sedikit bergoyang, dan itulah sebabnya bintang tampak berkelap-kelip.</p>
+                </div>
             </div>
 
             <div class="galeri">
